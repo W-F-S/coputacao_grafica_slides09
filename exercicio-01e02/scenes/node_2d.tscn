@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://c7pln7mu4icor"]
+
+[ext_resource type="Script" uid="uid://c3fcfltu6lf2a" path="res://scripts/polygons.gd" id="1_6e84v"]
+[ext_resource type="Script" uid="uid://b3htt16dk2m73" path="res://scripts/imagem_background.gd" id="2_4dvvg"]
+[ext_resource type="Script" uid="uid://dmcqu7kalnfcx" path="res://scripts/mascara_clipping.gd" id="2_4vge2"]
+
+[node name="Root" type="Node2D"]
+script = ExtResource("1_6e84v")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Trocar_cor" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 100.0
+offset_right = 278.0
+offset_bottom = 23.0
+text = "[LMB] para trocar a cor"
+
+[node name="Trocar_imagem" type="Label" parent="Control"]
+layout_mode = 0
+offset_left = 300.0
+offset_right = 590.0
+offset_bottom = 23.0
+text = "Aperte [1] ou [2] para trocar a textura"
+
+[node name="Triangulo" type="Polygon2D" parent="."]
+self_modulate = Color(1, 0.12156863, 1, 1)
+clip_children = 2
+light_mask = 2
+visibility_layer = 2
+script = ExtResource("2_4vge2")
+
+[node name="background" type="Polygon2D" parent="Triangulo"]
+light_mask = 4
+visibility_layer = 4
+script = ExtResource("2_4dvvg")

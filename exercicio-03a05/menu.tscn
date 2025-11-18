@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://bmqi56n41oddh"]
+
+[ext_resource type="Script" uid="uid://u51lkuidt7bm" path="res://button.gd" id="1_lti8b"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_lti8b")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 169.0
+offset_top = 42.0
+offset_right = 282.0
+offset_bottom = 65.0
+text = "Iniciar cena 3d"
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+offset_left = 124.0
+offset_top = 20.0
+offset_right = 321.0
+offset_bottom = 95.0
+metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

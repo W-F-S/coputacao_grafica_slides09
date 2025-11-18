@@ -1,0 +1,8 @@
+Exercicio 01 - Preenchimentos Criativos (2D)
+Crie Formas.tscn com tres poligonos (triângulo,
+hexagono e estrela).
+Aplique em cada um:
+• contorno
+• interpolação por vertice
+• textura tileada
+Permita alterar cores com cliques do mouse.
