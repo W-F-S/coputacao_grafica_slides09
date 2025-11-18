@@ -21,10 +21,9 @@ var pattern_tex: Texture2D
 
 
 func _ready() -> void:
-	pattern_tex = load(polygon_node.current_text)
+	pattern_tex = load(polygon_node.TEX_1)
 
 func _draw():
-	print(polygon_node.current_text)
 	_draw_pattern_grid(Rect2(P4, SZ))
 
 func _draw_pattern_grid(r: Rect2) -> void:
@@ -42,6 +41,6 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventKey and event.keycode == KEY_1 and event.pressed:
 		pattern_tex = load(polygon_node.TEX_1)
 		
-		
 	if event is InputEventKey and event.keycode == KEY_2 and event.pressed:
 		pattern_tex = load(polygon_node.TEX_2)
+	queue_redraw()

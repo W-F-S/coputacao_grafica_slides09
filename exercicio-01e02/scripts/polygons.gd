@@ -15,12 +15,6 @@ var poly_points_1: PackedVector2Array = PackedVector2Array([
 	Vector2(100, 150)   # Ponto arbitrário modificado
 ])
 
-
-# ----------------------------------------------------------------------
-# POLÍGONO 2: hexagon (Hexágono Modificado)
-
-# O primeiro vértice (325.0, 125.0) deve se tornar (100, 100)
-# Os outros vértices são reatribuídos a valores fixos arbitrários.
 var hexagon: PackedVector2Array = PackedVector2Array([
 	Vector2(100.0, 100.0), # Novo ponto de início
 	Vector2(250.0, 100.0), # Ponto arbitrário modificado
@@ -30,12 +24,6 @@ var hexagon: PackedVector2Array = PackedVector2Array([
 	Vector2(25.0, 175.0)   # Ponto arbitrário modificado
 ])
 
-
-# ----------------------------------------------------------------------
-# POLÍGONO 3: star_points_array (Estrela Modificada)
-
-# O primeiro vértice (300.0, 175.0) deve se tornar (100, 100)
-# Os outros vértices são reatribuídos a valores fixos arbitrários.
 var star_points_array: PackedVector2Array = PackedVector2Array([
 	Vector2(100.0, 100.0), # Novo ponto de início
 	Vector2(110.0, 130.0), # Ponto arbitrário modificado
@@ -66,20 +54,6 @@ var c_v2: Color = Color(0, 0, 1, alfa)
 var c_v3: Color = Color(1, 1, 0, alfa)
 var c_v4: Color = Color(0, 1, 1, alfa)
 var c_v5: Color = Color(1, 0, 1, alfa)
-
-
-
-
-# --- INITIALIZATION LOGIC ---
-
-#func _ready():
-	# 1. SETUP THE MASKING GEOMETRY (Runs ONLY once)
-	#triangle_mask.polygon = triangle_points
-	# The mask node itself must be invisible (setting color to transparent ensures this)
-	#triangle_mask.color = Color(1, 0, 1, 1)
-
-	# 3. APPLY MATERIALS (Runs ONLY once)
-	#create_clipping_mask()
 
 func _ready() -> void:
 	randomize()

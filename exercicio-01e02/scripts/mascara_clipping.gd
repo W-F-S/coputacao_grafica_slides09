@@ -53,13 +53,3 @@ func _input(event: InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		geral._randomize_palette()
 		queue_redraw()
-		
-	#if event is InputEventKey and event.keycode == KEY_1 and event.pressed:
-		#print("1 pressed")
-		#
-		#polygon_node.current_text = polygon_node.TEX_1
-		#
-		#
-	#if event is InputEventKey and event.keycode == KEY_2 and event.pressed:
-		#print("2 pressed")
-		#polygon_node.current_text = polygon_node.TEX_2
