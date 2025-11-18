@@ -1,0 +1,3 @@
+Exercícios 01 e 02: https://github.com/W-F-S/coputacao_grafica_slides09/tree/main/exercicio-01e02
+
+Exercícios 03, 04 e 05: https://github.com/W-F-S/coputacao_grafica_slides09/tree/main/exercicio-03a05
